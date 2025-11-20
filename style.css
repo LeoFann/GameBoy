@@ -1,0 +1,61 @@
+/* --- CSS Loading Screen Awal --- */
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #000;
+    font-family: 'Courier New', Courier, monospace;
+    color: #e81f7f;
+    overflow: hidden;
+    transition: background-color 0.5s;
+}
+
+.container {
+    text-align: center;
+}
+
+.box {
+    background-color: transparent;
+    border: 2px solid #e81f7f;
+    padding: 30px 60px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px #e81f7f, 0 0 30px #e81f7f; 
+}
+
+.title {
+    font-size: 2.2em;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    text-shadow: 0 0 5px #e81f7f, 0 0 10px #e81f7f; 
+}
+
+.ready-text {
+    font-size: 1.2em;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.progress-bar-container {
+    width: 250px;
+    height: 15px;
+    background-color: #333;
+    border-radius: 5px;
+    margin: 0 auto 15px auto;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #e81f7f;
+    border-radius: 5px;
+    transition: width 0.1s linear; 
+    width: 0%;
+}
+
+.loading-text {
+    font-size: 1.1em;
+    margin-top: 15px;
+    text-shadow: 0 0 3px #e81f7f;
+}
